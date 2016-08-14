@@ -10,12 +10,15 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="JS/app.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js"></script>
+	<script type="text/javascript" src="biblioteka/anuglar-ui-router.min.js"></script>
+	<script type="text/javascript" src="JS/navApp.js"></script>
 </head>
-<body>
+<body id="body">
+
 	<header>	
 		<div class="head">
 			<div class="myName"> 
@@ -24,100 +27,133 @@
 			</div>
 		</div>
 	</header>
+	<div class="row topPage">
+		<div class="col-md-4 topName">
+			<h4>Jan Tillack</h4>
+		</div>
+		<div class="col-md-8 nav">
+			<ul class="nav">
+				<li role="presentation"><a href="#aboutMe">About Me</a></li>
+				<li role="presentation"><a href="#skills">My skills</a></li>
+				<li role="presentation"><a href="#experience">Experience</a></li>
+				<li role="presentation"><a href="#plans">Plans</a></li>
+				<li role="presentation"><a href="#inerests">Interests</a></li>
+				<li role="presentation"><a href="#">Whatever</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
 	<div class="container">
-		<div class="row infoMe">
+		<div class="row infoMe" id="aboutMe">
 			<div class="col-md-4 myPhoto">
 				<img src="http://placehold.it/250x200">
 			</div>
-			<div class="col-md-8 aboutMe">
+			<div class="col-md-8 aboutMe" >
+				<h3>Who am I?</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, placeat, voluptatem. Tenetur consectetur nostrum ducimus soluta. Ad eaque, veritatis aliquam cum temporibus ipsum consequuntur consectetur, qui placeat cumque unde a?
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim reprehenderit qui, quo cum autem illum deserunt quis, ex amet modi libero temporibus ullam soluta odio saepe ducimus voluptates eligendi! Eveniet.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-5">
+			<div class="row" id="skills">
+				<div class="col-md-5" >
 					<h3>Moje umiejęstności</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem omnis et ipsum, doloribus assumenda quod a quasi porro ipsa delectus, modi itaque sunt voluptate vitae cumque nulla dolore ad error.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur harum nulla delectus quidem blanditiis, omnis consequuntur! Necessitatibus sapiente, explicabo odit iste sequi mollitia officiis, debitis distinctio, eos tempora deserunt?</p>
 					</div>
 					<div class="col-md-2"></div>
 					<div class="col-md-5">
+						Miejsce na ikonki programów/języków które znam/używam + poziom do każdego napisany gwiazdkami.
+					</div>
+				</div>
+				<div class="row" id="experience" >
+					<div class="col-md-5">
 						<h3>Moje doświadczenie</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est modi quia explicabo adipisci nisi nesciunt repellat repellendus inventore placeat, ea nam iste rem, ducimus dolores distinctio voluptatum, consequuntur debitis mollitia.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque delectus provident debitis adipisci obcaecati excepturi consequuntur, asperiores cumque! Libero tempore autem aliquam accusantium ex tenetur deserunt quidem, laborum maxime!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem omnis et ipsum, doloribus assumenda quod a quasi porro ipsa delectus, modi itaque sunt voluptate vitae cumque nulla dolore ad error.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vel, molestiae, accusantium illo enim cupiditate blanditiis aliquam provident harum, voluptatem placeat consectetur doloribus cum minima distinctio pariatur reprehenderit. Ducimus, corrupti.</p>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-5">
+							Miejsce na loga firm, w których pracowałem/loga firm u których miałem kursy bądź jakieś zdjęcia.
 						</div>
 					</div>
-					<div class="row">
+					<div class="row" id="plans">
 						<div class="col-md-5">
-							<h3>Moje zainteresowania</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem omnis et ipsum, doloribus assumenda quod a quasi porro ipsa delectus, modi itaque sunt voluptate vitae cumque nulla dolore ad error.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vel, molestiae, accusantium illo enim cupiditate blanditiis aliquam provident harum, voluptatem placeat consectetur doloribus cum minima distinctio pariatur reprehenderit. Ducimus, corrupti.</p>
-							</div>
-							<div class="col-md-2"></div>
-							<div class="col-md-5">
-								<h3>Moje plany</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est modi quia explicabo adipisci nisi nesciunt repellat repellendus inventore placeat, ea nam iste rem, ducimus dolores distinctio voluptatum, consequuntur debitis mollitia.
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure incidunt fuga aliquid maxime, iusto magni soluta laborum ullam, excepturi odit, sed totam velit rem repellendus alias libero labore? Accusamus, reiciendis.</p>
+							<h3>Moje plany</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis unde mollitia nemo sapiente repellendus, doloribus eaque, error cumque, nihil quae vero dolorem! Nobis ipsum vero minima optio sint recusandae placeat.</p>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-5">
+							Miejsce na ikonki języków/programów, których się ucze i będe się uczył.
+						</div>
+					</div>
+					<div class="row" id="interests">
+						<div class="col-md-5">
+							<h3>Moje Zainteresowania</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, incidunt repellat ab tenetur illum recusandae doloribus iste quisquam ut, in accusantium. Totam quos quisquam ipsa possimus, provident voluptatibus, dolore enim.</p>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-md-5">
+							Miejsce na zdjęcia/miniaturki stuff'u którym się interesuję.
+						</div>
+					</div>
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img  src="http://placehold.it/1250x500" alt="photo1">
+								<div class="carousel-caption">
+								</div>
+								<div class="carousel-caption">
+									<h4>Projekt 1</h4>
+									<p>Pierwszy projekt</p>
 								</div>
 							</div>
-							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-								<!-- Indicators -->
-								<ol class="carousel-indicators">
-									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-								</ol>
-
-								<!-- Wrapper for slides -->
-								<div class="carousel-inner" role="listbox">
-									<div class="item active">
-										<img  src="http://placehold.it/1250x500" alt="photo1">
-										<div class="carousel-caption">
-										</div>
-										<div class="carousel-caption">
-											<h4>Projekt 1</h4>
-											<p>Pierwszy projekt</p>
-										</div>
-									</div>
-									<div class="item">
-										<img src="http://placehold.it/1250x500" alt="Photo2">
-										<div class="carousel-caption">
-										</div>
-										<div class="carousel-caption">
-											<h4>Projekt 2</h4>
-											<p>Drugi projekt</p>
-										</div>
-									</div>
-									<div class="item">
-										<img src="http://placehold.it/1250x500" alt="Photo3">
-										<div class="carousel-caption">
-											<h4>Projekt 3</h4>
-											<p>Trzeci projekt</p>
-										</div>
-									</div>
+							<div class="item">
+								<img src="http://placehold.it/1250x500" alt="Photo2">
+								<div class="carousel-caption">
 								</div>
-
-								<!-- Controls -->
-								<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
+								<div class="carousel-caption">
+									<h4>Projekt 2</h4>
+									<p>Drugi projekt</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="http://placehold.it/1250x500" alt="Photo3">
+								<div class="carousel-caption">
+									<h4>Projekt 3</h4>
+									<p>Trzeci projekt</p>
+								</div>
 							</div>
 						</div>
-					</body>
-					<footer>
-						<h4>Kontakt i więdej informacjii:</h4>
-						<ul>
-							<li role="presentation"> E-mail</li>
-							<li role="presentation"><a href="https://github.com/JanTillack">Git-hub</a></li>
-							<li role="presentation"><a href="https://www.facebook.com/jan.tillack.9">Facebook</a></li>
-							<li role="presentation"><a href="#">CV elektroniczne</a></li>
-						</ul>
-					</footer>
-					<link rel="stylesheet" type="text/css" href="style.css">
-					</html>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</body>
+			<footer>
+				<h4>Kontakt i więdej informacjii:</h4>
+				<ul>
+					<li role="presentation"> E-mail</li>
+					<li role="presentation"><a href="https://github.com/JanTillack">Git-hub</a></li>
+					<li role="presentation"><a href="https://www.facebook.com/jan.tillack.9">Facebook</a></li>
+					<li role="presentation"><a href="#">CV elektroniczne</a></li>
+				</ul>
+			</footer>
+			<link rel="stylesheet" type="text/css" href="style/style.css">
+			</html>
