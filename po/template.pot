@@ -28,6 +28,10 @@ msgstr ""
 msgid "Moje umiejętności"
 msgstr ""
 
+#: JS/Directives.js:11
+msgid "My Page - Jan Tillack"
+msgstr ""
+
 #: components/aboutme/aboutme.html:5
 msgid "Who am I?"
 msgstr ""

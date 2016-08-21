@@ -38,6 +38,9 @@ footer {
   font-size: 16px;
   color: white;
 }
+.infoback {
+  background-color: black;
+}
 header {
   color: white;
   background-image: url('../style/Obrazy/background.jpg');

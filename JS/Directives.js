@@ -5,27 +5,14 @@ app.directive('changeLanguage', function(){
 		templateUrl: 'components/languagechange/changelanguage.html',
 		restrict: 'E',
 		scope: {},
-		controller: function ($scope, gettextCatalog) {
+		controller: function ($scope, languageFactory) {
 			$scope.changeLanguage = function(language){
-				gettextCatalog.setCurrentLanguage(language);
+				languageFactory.setActiveLanguage(language);
 			}
 
-			$scope.languageList = [
-			{
-				code: 'en_150',
-				label: 'English'
-			},
-			{
-				code: 'pl_PL',
-				label: 'Polski'
-			},
-			{
-				code: 'hr_HR',
-				label: 'Hrovatka'
-			}
-			];
+			$scope.languageList = languageFactory.languages;
 		}
-	};
+	}
 })
 
 app.directive('navigation', function() {
