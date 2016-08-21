@@ -1,5 +1,33 @@
 var app = angular.module('myApp');
 
+app.directive('changeLanguage', function(){
+	return {
+		templateUrl: 'components/languagechange/changelanguage.html',
+		restrict: 'E',
+		scope: {},
+		controller: function ($scope, gettextCatalog) {
+			$scope.changeLanguage = function(language){
+				gettextCatalog.setCurrentLanguage(language);
+			}
+
+			$scope.languageList = [
+			{
+				code: 'en_150',
+				label: 'English'
+			},
+			{
+				code: 'pl_PL',
+				label: 'Polski'
+			},
+			{
+				code: 'hr_HR',
+				label: 'Hrovatka'
+			}
+			];
+		}
+	};
+})
+
 app.directive('navigation', function() {
 	return{
 		templateUrl: 'components/nav/nav.html' ,
@@ -64,8 +92,6 @@ app.directive('mySkills', function(){
 		scope: {}
 	};
 })
-
-
 
 
 

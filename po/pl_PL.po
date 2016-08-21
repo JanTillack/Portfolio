@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: components/contact/contact.html:1
+msgid "Kontakt i więcej informacji:"
+msgstr "Kontakt i więcej informacji:"
+
+#: components/languagechange/changelanguage.html:2
+msgid "Language"
+msgstr "Język"
+
+#: components/interests/interests.html:2
+msgid "Moje Zainteresowania"
+msgstr "Moje Zainteresowania"
+
+#: components/experience/experience.html:2
+msgid "Moje doświadczenie"
+msgstr "Moje doświadczenie"
+
+#: components/plans/plans.html:2
+msgid "Moje plany"
+msgstr "Moje umiejętności"
+
+#: components/skills/skills.html:2
+msgid "Moje umiejętności"
+msgstr "Moje umiejętności"
+
+#: components/aboutme/aboutme.html:5
+msgid "Who am I?"
+msgstr "Who am I?"
+
+#~ msgid ""
+#~ "Miejsce na ikonki programów/języków które znam/używam + poziom do każdego "
+#~ "napisany gwiazdkami czy czymś tam innym."
+#~ msgstr ""
+#~ "Miejsce na ikonki programów/języków które znam/używam + poziom do każdego "
+#~ "napisany gwiazdkami czy czymś tam innym."

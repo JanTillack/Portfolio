@@ -1,13 +1,5 @@
-var app = angular.module('myApp', ['ui.router']);
+var app = angular.module('myApp', ['ui.router', 'gettext']);
 
-app.config(function($stateProvider, $urlRouterProvider)  {
-	// $stateProvider
-	// .state('header' , {
-	// 	url: 'components/header.html',
-	// 	templateUrl: 'header.html'
-	// })
-	
-});
-app.controller('headerController', function($scope) {
-	$scope.header = 'header';
+app.run(function (gettextCatalog) {
+    gettextCatalog.setCurrentLanguage('pl_PL');
 });
