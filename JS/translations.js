@@ -1,0 +1,7 @@
+angular.module('myApp').run(['gettextCatalog', function (gettextCatalog) {
+/* jshint -W100 */
+    gettextCatalog.setStrings('en_150', {"Miejsce na ikonki programów/języków które znam/używam + poziom do każdego napisany gwiazdkami czy czymś tam innym.":"Place for the icons of programs / languages ​​that I know / the level of each written with asterisks or something else.","Moje Zainteresowania":"My hobbies","Moje doświadczenie":"My experience","Moje plany":"My plans","Moje umiejętności":"My skills"});
+    gettextCatalog.setStrings('hr_HR', {"Miejsce na ikonki programów/języków które znam/używam + poziom do każdego napisany gwiazdkami czy czymś tam innym.":"Stavite na ikone programa / jezici koje znam / mogu koristiti   razinu svaka napisana sa zvjezdicama ili nešto drugo tamo.","Moje Zainteresowania":"Moji interesi","Moje doświadczenie":"Moje iskustvo","Moje plany":"Moji planovi","Moje umiejętności":"Moje vještine"});
+    gettextCatalog.setStrings('pl_PL', {"Miejsce na ikonki programów/języków które znam/używam + poziom do każdego napisany gwiazdkami czy czymś tam innym.":"Miejsce na ikonki programów/języków które znam/używam + poziom do każdego napisany gwiazdkami czy czymś tam innym.","Moje Zainteresowania":"Moje Zainteresowania","Moje doświadczenie":"Moje doświadczenie","Moje plany":"Moje umiejętności","Moje umiejętności":"Moje umiejętności"});
+/* jshint +W100 */
+}]);

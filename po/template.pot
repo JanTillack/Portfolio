@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: components/contact/contact.html:1
+msgid "Kontakt i więcej informacji:"
+msgstr ""
+
+#: components/languagechange/changelanguage.html:2
+msgid "Language"
+msgstr ""
+
+#: components/interests/interests.html:2
+msgid "Moje Zainteresowania"
+msgstr ""
+
+#: components/experience/experience.html:2
+msgid "Moje doświadczenie"
+msgstr ""
+
+#: components/plans/plans.html:2
+msgid "Moje plany"
+msgstr ""
+
+#: components/skills/skills.html:2
+msgid "Moje umiejętności"
+msgstr ""
+
+#: components/aboutme/aboutme.html:5
+msgid "Who am I?"
+msgstr ""
