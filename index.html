@@ -20,35 +20,35 @@
 </head>
 <body ng-app="myApp" id="body">
 
-	<header ng-include="'components/header/header.html'">	
-		
+	<header>	
+		<page-header></page-header>
 	</header>
 	<div class="row topPage">
 		<navigation></navigation>
 	</div>
 	<div class="container">
-		<div class="row infoMe" id="aboutMe" ng-include="'components/aboutme/aboutme.html'">
-			
+		<div class="row infoMe" id="aboutMe">
+			<my-info></my-info>
 		</div>
-		<div class="row" id="skills" ng-include="'components/skills/skills.html'">
-
+		<div class="row" id="skills">
+			<my-skills></my-skills>
 		</div>
-		<div class="row" id="experience" ng-include="'components/experience/experience.html'" >
-
+		<div class="row" id="experience">
+			<my-experience></my-experience>
 		</div>
-		<div class="row" id="plans" ng-include="'components/plans/plans.html'">
-
+		<div class="row" id="plans">
+			<my-plans></my-plans>
 		</div>
-		<div class="row" id="interests" ng-include="'components/interests/interests.html'">
-
+		<div class="row" id="interests">
+			<my-interests></my-interests>
 		</div>
-		<div ng-include="'components/portfolio/portfolio.html'">
-
+		<div>
+			<my-portfolio></my-portfolio>
 		</div>
 	</div>
 </body>
-<footer ng-include="'components/contact/contact.html'">
-
+<footer>
+	<contact-info></contact-info>
 </footer>
 <link rel="stylesheet" type="text/css" href="looks.css">
 </html>
